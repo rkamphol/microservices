@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  AuthenServiceRepository:
+    Type: AWS::ECR::PublicRepository
+    Properties:
+      RepositoryName: 'microservices-authen'
+      RepositoryCatalogData:
+        UsageText: ""
+        AboutText: ""
+        OperatingSystems:
+          - "Linux"
+        Architectures:
+          - "x86"
+        RepositoryDescription: "This is a microservices-authen."
+
+Outputs:
+  AuthenServiceRepositoryUri:
+    Description: "AuthenServiceRepository URI"
+    Value: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.${AWS::URLSuffix}/microservices-authen
+    Export:
+      Name: AuthenServiceRepositoryUri

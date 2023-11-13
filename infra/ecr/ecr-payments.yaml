@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  PaymentsServiceRepository:
+    Type: AWS::ECR::PublicRepository
+    Properties:
+      RepositoryName: 'microservices-payments'
+      RepositoryCatalogData:
+        UsageText: ""
+        AboutText: ""
+        OperatingSystems:
+          - "Linux"
+        Architectures:
+          - "x86"
+        RepositoryDescription: "This is a microservices-payments."
+
+Outputs:
+  PaymentsServiceRepositoryUri:
+    Description: "PaymentsServiceRepositoryUri URI"
+    Value: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.${AWS::URLSuffix}/microservices-payments
+    Export:
+      Name: PaymentsServiceRepositoryUri

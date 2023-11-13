@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  InvoicesServiceRepository:
+    Type: AWS::ECR::PublicRepository
+    Properties:
+      RepositoryName: 'microservices-invoices'
+      RepositoryCatalogData:
+        UsageText: ""
+        AboutText: ""
+        OperatingSystems:
+          - "Linux"
+        Architectures:
+          - "x86"
+        RepositoryDescription: "This is a microservices-invoices."
+
+Outputs:
+  InvoicesServiceRepository:
+    Description: "InvoicesServiceRepository URI"
+    Value: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.${AWS::URLSuffix}/microservices-invoices
+    Export:
+      Name: InvoicesServiceRepository

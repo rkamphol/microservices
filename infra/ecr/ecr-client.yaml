@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  ClientServiceRepository:
+    Type: AWS::ECR::PublicRepository
+    Properties:
+      RepositoryName: 'microservices-client'
+      RepositoryCatalogData:
+        UsageText: ""
+        AboutText: ""
+        OperatingSystems:
+          - "Linux"
+        Architectures:
+          - "x86"
+        RepositoryDescription: "This is a microservices-client."
+
+
+Outputs:
+  ClientServiceRepositoryUri:
+    Description: "ClientServiceRepository URI"
+    Value: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.${AWS::URLSuffix}/microservices-client
+    Export:
+      Name: ClientServiceRepositoryUri
