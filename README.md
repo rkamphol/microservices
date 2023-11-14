@@ -11,6 +11,27 @@ Optimize Cost Efficiency with Serverless:
 2. Choosing serverless architecture to maximize cost savings by leveraging on-demand resources and efficient scaling based on actual usage.
 3. Scalability Management: Facilitating easy scalability of services on cloud, allowing for straightforward and efficient management of system growth and demand fluctuations.
 
+# technology stacks
+1. Frontend: React.js
+Dynamic UI: React.js for responsive, component-based frontend
+2. Backend: Node.js (Express.js)
+Fast & Scalable: Node.js with Express.js for efficient server-side processing.
+3. Authentication: JWT
+Secure Access: JWT for stateless and secure user authentication.
+4. Infrastructure AWS
+* ECR
+* ECS Fargate Serverless
+* Docker
+* Amazon Aurora PostgreSQL Serverless
+* Application Load Balancer
+
+3. Database: AWS RDS (Aurora Postgres)
+Reliable Storage: AWS RDS with Aurora Postgres for secure data storage.
+3. Authentication: JWT
+Secure Access: JWT for stateless and secure user authentication.
+● Hosting & Deployment: 
+● Efficient Deployment: AWS ECS for scalable hosting and streamlined deployment.
+
 # how to run on local machine
 1. Setup database for microservices (using Postgres)
 2. Create empty database as following
