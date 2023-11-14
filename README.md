@@ -5,6 +5,12 @@ This title reflects the intent to start the design process with a microservices 
 
 I have chosen to craft a microservices architecture for this demonstration project to showcase both the benefits and challenges associated with this approach.
 
+# objectives of the Service Infrastructure Design
+1. Demonstratate Modular System Resilience: Designing the system modules to operate independently so that if one service experiences downtime, other services can continue serving customers seamlessly.
+Optimize Cost Efficiency with Serverless:
+2. Choosing serverless architecture to maximize cost savings by leveraging on-demand resources and efficient scaling based on actual usage.
+3. Scalability Management: Facilitating easy scalability of services on cloud, allowing for straightforward and efficient management of system growth and demand fluctuations.
+
 # how to run on local machine
 1. Setup database for microservices (using Postgres)
 2. Create empty database as following
