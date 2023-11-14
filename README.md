@@ -25,12 +25,10 @@ Secure Access: JWT for stateless and secure user authentication.
 * Amazon Aurora PostgreSQL Serverless
 * Application Load Balancer
 
-3. Database: AWS RDS (Aurora Postgres)
-Reliable Storage: AWS RDS with Aurora Postgres for secure data storage.
-3. Authentication: JWT
-Secure Access: JWT for stateless and secure user authentication.
-● Hosting & Deployment: 
-● Efficient Deployment: AWS ECS for scalable hosting and streamlined deployment.
+# services
+1. authentication
+2. invoices and payments
+3. client
 
 # how to run on local machine
 1. Setup database for microservices (using Postgres)
