@@ -30,6 +30,18 @@ Secure Access: JWT for stateless and secure user authentication.
 2. invoices and payments
 3. client
 
+# libraries
+* <a href="https://expressjs.com/">express.js</a>
+* <a href="https://www.npmjs.com/package/cors">cors</a>
+* <a href="https://www.npmjs.com/package/dotenv">dotenv</a>
+* <a href="https://www.npmjs.com/package/jsonwebtoken">jsonwebtoken</a>
+* <a href="https://www.npmjs.com/package/bcryptjs">bcryptjs</a>
+* <a href="https://www.npmjs.com/package/pg">pg</a>
+* <a href="https://sequelize.org/">sequelize</a> and <a href="https://www.npmjs.com/package/sequelize-cli">sequelize-cli</a>
+* <a href="https://www.npmjs.com/package/axios">axios</a>
+* <a href="https://getbootstrap.com/">bootstrap</a>
+* <a href="https://www.npmjs.com/package/react-router-dom">react-router-dom</a>
+
 # how to run on local machine
 1. Setup database for microservices (using Postgres)
 2. Create empty database as following
